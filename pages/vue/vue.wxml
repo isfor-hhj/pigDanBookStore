@@ -1,0 +1,16 @@
+<!--pages/vue/vue.wxml-->
+<scroll-view scroll-y style="height: 600px;" >
+  <view class="vue-books">
+    <view wx:for="{{books}}" class="vue-books-content">
+        <image style="width: 100px; height: 100px;" src="{{item.src}}" mode="scaleToFill"></image>
+        <view class="vue-remark">
+          <view><text class="vue-title">{{item.title}}</text></view>
+          <view><text class="vue-price">{{item.price}}￥</text></view>
+        </view>
+        <button type="warn" size="mini" plain="true">加入购物车</button>
+      </view>
+  </view>
+  <view class="vue-car" bindtap="go">
+      <image style="width: 30px; height: 30px;" src="../../images/car.svg" mode="scaleToFill"></image>
+      </view>
+</scroll-view>

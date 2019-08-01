@@ -1,0 +1,16 @@
+<!--pages/angular/angular.wxml-->
+<scroll-view scroll-y style="height: 600px;" >
+  <view class="angular-books">
+    <view wx:for="{{books}}" class="angular-books-content">
+        <image style="width: 100px; height: 100px;" src="{{item.src}}" mode="scaleToFill"></image>
+        <view class="angular-remark">
+          <view><text class="angular-title">{{item.title}}</text></view>
+          <view><text class="angular-price">{{item.price}}￥</text></view>
+        </view>
+        <button type="warn" size="mini" plain="true">加入购物车</button>
+      </view>
+  </view>
+  <view class="angular-car" bindtap="go">
+      <image style="width: 30px; height: 30px;" src="../../images/car.svg" mode="scaleToFill"></image>
+  </view>
+</scroll-view>

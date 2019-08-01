@@ -1,0 +1,18 @@
+<!--pages/user/user.wxml-->
+<view>
+  <view class="person-top">
+    <image class="person-background" src="../../images/book.png" mode="scaleToFill"></image>
+    <view class="person-head">
+      <image class="person-head-pic" src="../../images/head.jpg" mode="scaleToFill"></image>
+      <view class="person-head-name">猪儿丹</view>
+    </view>
+  </view>
+  <view class="person-address" bindtap="openModal">
+    <text>收货地址</text>
+    <image src="../../images/right.svg" style="width: 60rpx; height: 60rpx; padding-right: 40rpx;"></image>
+  </view>
+
+  <modal hidden="{{hiddenmodalput}}" title="请输入收货地址" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+    <input type='text'placeholder="收货地址" auto-focus/>
+</modal>
+</view>

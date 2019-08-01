@@ -1,0 +1,34 @@
+<!--pages/order/order.wxml-->
+<scroll-view scroll-y style="height: 540px;">
+  <view class="order-books">
+    <view wx:for="{{books}}" class="order-books-content">
+      <view class='action-checkbox'>
+        <checkbox checked></checkbox>
+      </view>
+      <image style="width: 100px; height: 100px;" src="{{item.src}}" mode="scaleToFill"></image>
+      <view class="order-remark">
+        <view>
+          <text class="order-title">{{item.title}}</text>
+        </view>
+        <view>
+          <text class="order-price">{{item.price}}￥</text>
+        </view>
+      </view>
+      <view class="order-btn-sum">
+        <button class='order-btn'>-</button>
+        <input class='order-sum' name='input' value="1"></input>
+        <button class='order-btn'>+</button>
+      </view>
+    </view>
+  </view>
+
+  <view class="order-bar">
+    <view class="action canui-checked">
+      <checkbox checked></checkbox>
+    </view>
+    <view>合计
+      <text style="color: red">￥150.00</text>
+    </view>
+    <view class='order-submit'>结算(3)</view>
+  </view>
+</scroll-view>

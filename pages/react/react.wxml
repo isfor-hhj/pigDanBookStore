@@ -1,0 +1,17 @@
+<!--pages/react/react.wxml-->
+  <scroll-view scroll-y style="height: 600px;" >
+    <view class="react-books">
+      <view wx:for="{{books}}" class="react-books-content">
+          <image style="width: 100px; height: 100px;" src="{{item.src}}" mode="scaleToFill"></image>
+          <view class="react-remark">
+            <view><text class="react-title">{{item.title}}</text></view>
+            <view><text class="react-price">{{item.price}}￥</text></view>
+          </view>
+          <button type="warn" size="mini" plain="true">加入购物车</button>
+        </view>
+    </view>
+      <view class="react-car" bindtap="go">
+      <image style="width: 30px; height: 30px;" src="../../images/car.svg" mode="scaleToFill"></image>
+      </view>
+  </scroll-view>
+

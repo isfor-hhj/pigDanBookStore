@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/react/react",
+    "pages/vue/vue",
+    "pages/angular/angular",
+    "pages/order/order",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "猪儿丹书店",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#F6F6F6",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/homepage.png",
+        "selectedIconPath": "images/_homepage.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "购物车",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/_order.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/_user.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap71.json"
+}
